@@ -1,3 +1,5 @@
+// 暴力求和
+
 var twoSum = function (nums, target) {
   for (let i = 0; i < nums.length; i++) {
     console.log("nums[i]", nums[i]);
