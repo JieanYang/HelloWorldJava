@@ -11,7 +11,7 @@ class Two_sum_2 {
 
         int[] input = { 2, 7, 11, 15 };
 
-        int[] result = Two_sum.twoSum(input, 9);
+        int[] result = Two_sum_2.twoSum(input, 9);
 
         System.out.println(Arrays.toString(result));
 
