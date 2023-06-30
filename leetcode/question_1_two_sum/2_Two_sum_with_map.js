@@ -17,5 +17,5 @@ var twoSum = function (nums, target) {
   return [0, 0];
 };
 
-var result = twoSum([3, 2, 4], 6);
-console.log("result", result);
+var result_1 = twoSum([3, 2, 4], 6);
+console.log("result", result_1);
