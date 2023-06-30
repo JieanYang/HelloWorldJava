@@ -1,6 +1,6 @@
 
 // 暴力求和
-package leetcode.question_1;
+package leetcode.question_1_two_sum;
 
 import java.util.Arrays;
 
