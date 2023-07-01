@@ -2,14 +2,14 @@ package leetcode.question_344_reverse_string;
 
 import java.util.Arrays;
 
-class rever_string {
+class rever_string_2 {
     public static void main(String[] args) {
         char[] s_1 = { 'h', 'e', 'l', 'l', 'o' };
-        char[] result_1 = rever_string.reverseString(s_1);
+        char[] result_1 = rever_string_2.reverseString(s_1);
         System.out.println("reusult_1:" + Arrays.toString(result_1));
 
         char[] s_2 = { 'H', 'a', 'n', 'n', 'a', 'h' };
-        char[] result_2 = rever_string.reverseString(s_2);
+        char[] result_2 = rever_string_2.reverseString(s_2);
         System.out.println("reusult_2:" + Arrays.toString(result_2));
     }
 
