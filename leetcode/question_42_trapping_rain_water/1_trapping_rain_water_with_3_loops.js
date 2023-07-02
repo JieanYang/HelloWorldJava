@@ -5,31 +5,20 @@
 var trap = function (height) {
   const maxLeftArray = [];
   const maxRightArray = [];
-  const watterArray = [];
 
-  let maxLeft;
+  let maxLeft = height[0];
   for (let n = 0; n < height.length; n++) {
-    if (n === 0) {
-      maxLeftArray[n] = 0;
+    maxLeftArray[n] = maxLeft;
+    if (height[n] > maxLeft) {
       maxLeft = height[n];
-    } else {
-      maxLeftArray[n] = maxLeft;
-      if (height[n] > maxLeft) {
-        maxLeft = height[n];
-      }
     }
   }
 
-  let maxRight;
+  let maxRight = height[height.length - 1];
   for (let n = height.length - 1; n >= 0; n--) {
-    if (n === height.length - 1) {
-      maxRightArray[height.length - 1] = 0;
+    maxRightArray[n] = maxRight;
+    if (height[n] > maxRight) {
       maxRight = height[n];
-    } else {
-      maxRightArray[n] = maxRight;
-      if (maxRightArray[n] > maxRight) {
-        maxRight = maxRightArray[n];
-      }
     }
   }
 
