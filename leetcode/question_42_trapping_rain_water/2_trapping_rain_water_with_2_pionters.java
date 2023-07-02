@@ -1,7 +1,5 @@
 package leetcode.question_42_trapping_rain_water;
 
-import java.util.Arrays;
-
 class trapping_rain_water {
     public static void main(String[] args) {
         System.out.println("42");
@@ -20,16 +18,18 @@ class trapping_rain_water {
         int left = 1;
         int right = height.length - 2;
 
-        while (left < right) {
+        // Key condition: <=, == 的情况是最后一个计算的空间的水的计算，因为所有的 left 和 right 都需要计算，
+        // 如果 left < right 则会漏算一个格子中的水
+        while (left <= right) {
             if (maxLeft < maxRight) {
-                if (height[left] > maxLeft) {
+                if (height[left] >= maxLeft) {
                     maxLeft = height[left];
                 } else {
                     sum += maxLeft - height[left];
                 }
                 left++;
             } else {
-                if (height[right] > maxRight) {
+                if (height[right] >= maxRight) {
                     maxRight = height[right];
                 } else {
                     sum += maxRight - height[right];
