@@ -1,6 +1,6 @@
 
 // 暴力求和
-package leetcode.D2023_06_30_Q_1_two_sum;
+package leetcode.D2023_06_30_Q1_two_sum;
 
 import java.util.Arrays;
 

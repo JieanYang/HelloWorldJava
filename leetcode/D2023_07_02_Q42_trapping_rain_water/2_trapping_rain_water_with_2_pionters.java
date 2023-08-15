@@ -1,4 +1,4 @@
-package leetcode.date_2023_07_02_question_42_trapping_rain_water;
+package leetcode.D2023_07_02_Q42_trapping_rain_water;
 
 class trapping_rain_water {
     public static void main(String[] args) {

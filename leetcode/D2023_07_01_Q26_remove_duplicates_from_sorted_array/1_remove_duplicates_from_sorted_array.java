@@ -1,4 +1,4 @@
-package leetcode.date_2023_07_01_question_26_remove_duplicates_from_sorted_array;
+package leetcode.D2023_07_01_Q26_remove_duplicates_from_sorted_array;
 
 class remove_duplicates_from_sorted_array {
     public static void main(String[] args) {
