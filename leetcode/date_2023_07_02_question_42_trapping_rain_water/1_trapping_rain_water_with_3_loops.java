@@ -1,4 +1,4 @@
-package leetcode.question_42_trapping_rain_water;
+package leetcode.date_2023_07_02_question_42_trapping_rain_water;
 
 import java.util.Arrays;
 

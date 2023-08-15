@@ -1,4 +1,4 @@
-package leetcode.question_11_container_with_most_water;
+package leetcode.date_2023_07_01_question_11_container_with_most_water;
 
 class container_with_most_water {
     public static void main(String[] args) {

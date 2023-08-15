@@ -1,6 +1,6 @@
 // 使用 Map 减少一个 n 的时间复杂度，转为存储 Map 换取一个 n 的空间复杂度
 
-package leetcode.question_1_two_sum;
+package leetcode.date_2023_06_30_question_1_two_sum;
 
 import java.util.Arrays;
 import java.util.Map;
