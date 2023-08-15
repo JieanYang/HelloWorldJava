@@ -7,7 +7,7 @@ class container_with_most_water {
         int result_1 = container_with_most_water.maxArea(input_1);
         System.out.println(result_1);
 
-        int[] input_2 = new int[] { 1, 1 };
+        // int[] input_2 = new int[] { 1, 1 };
     }
 
     public static int maxArea(int[] height) {
