@@ -8,7 +8,10 @@ class trapping_rain_water {
 
         int[] input_1 = new int[] { 4, 2, 0, 3, 2, 5 };
 
-        trapping_rain_water.trap(input_1);
+        int sum = trapping_rain_water.trap(input_1);
+
+        System.out.println("sum");
+        System.out.println(sum);
 
     }
 
