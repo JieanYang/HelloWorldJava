@@ -28,7 +28,7 @@ var splitArray = function (nums, k) {
     console.log("mid", mid);
 
     // split count for nums under mid sum
-    let count = 0;
+    let count = 1;
     let sum = 0;
     for (let i = 0; i < nums.length; i++) {
       sum += nums[i];
@@ -39,17 +39,8 @@ var splitArray = function (nums, k) {
       }
     }
 
-    count++;
-
     console.log("count", count);
     console.log("k", k);
-
-    // if (count <= k) { // results 17
-    //   console.log("here");
-    //   right = mid - 1;
-    // } else {
-    //   left = mid;
-    // }
 
     if (count > k) {
       left = mid + 1;

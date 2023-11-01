@@ -35,8 +35,11 @@ public class index {
             while (lo < hi) {
                 int mid = lo + (hi - lo) / 2;
 
+                System.out.println("mid");
+                System.out.println(mid);
+
                 if (isPossible(nums, mid, m)) {
-                    ans = mid;
+                    ans = mid; // here get 18 as result
                     hi = mid - 1;
                 } else {
                     lo = mid + 1;
@@ -60,11 +63,10 @@ public class index {
             }
         }
 
-        if (requiredSubarrays >= m) {
+        if (requiredSubarrays <= m) {
             return true;
         }
 
         return false;
-
     }
 }
