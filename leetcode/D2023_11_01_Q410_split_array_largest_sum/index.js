@@ -21,9 +21,9 @@ var splitArray = function (nums, k) {
   let right = maxRange;
   console.log("left", left);
   console.log("right", right);
-  let mid;
+
   while (left < right) {
-    mid = (left + (right - left)) / 2;
+    const mid = left + Math.floor((right - left) / 2);
 
     console.log("mid", mid);
 
@@ -33,24 +33,35 @@ var splitArray = function (nums, k) {
     for (let i = 0; i < nums.length; i++) {
       sum += nums[i];
 
-      if (sum >= mid) {
-        sum = 0;
+      if (sum > mid) {
         count++;
+        sum = nums[i];
       }
     }
 
     count++;
 
     console.log("count", count);
+    console.log("k", k);
 
-    if (count <= k) {
-      right = mid - 1;
-    } else {
+    // if (count <= k) { // results 17
+    //   console.log("here");
+    //   right = mid - 1;
+    // } else {
+    //   left = mid;
+    // }
+
+    if (count > k) {
       left = mid + 1;
+    } else {
+      right = mid;
     }
   }
 
-  return mid;
+  console.log("left", left);
+  console.log("right", right);
+
+  return left;
 };
 
 const resutls = splitArray([7, 2, 5, 10, 8], 2);
