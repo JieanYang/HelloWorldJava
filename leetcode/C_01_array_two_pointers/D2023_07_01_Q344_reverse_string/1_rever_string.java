@@ -1,4 +1,4 @@
-package leetcode.D2023_07_01_Q344_reverse_string;
+package leetcode.C_01_array_two_pointers.D2023_07_01_Q344_reverse_string;
 
 import java.util.Arrays;
 

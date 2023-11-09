@@ -1,4 +1,4 @@
-package leetcode.D2023_07_02_Q42_trapping_rain_water;
+package leetcode.C_01_array_two_pointers.D2023_07_02_Q42_trapping_rain_water;
 
 import java.util.Arrays;
 
