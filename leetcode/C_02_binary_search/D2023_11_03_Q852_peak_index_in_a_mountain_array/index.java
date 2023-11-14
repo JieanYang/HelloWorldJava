@@ -21,7 +21,6 @@ class index {
             System.out.println("mid");
             System.out.println(mid);
 
-            // condition arr[mid-1] < arr[mid] && arr[mid] > arr[mid + 1]
             if (arr[mid - 1] < arr[mid] && arr[mid] < arr[mid + 1]) {
                 left = mid + 1;
             } else {
