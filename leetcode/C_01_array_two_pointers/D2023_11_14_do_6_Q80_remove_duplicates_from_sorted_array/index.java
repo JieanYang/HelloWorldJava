@@ -1,4 +1,4 @@
-package leetcode.C_01_array_two_pointers.D2023_11_14_Q80_remove_duplicates_from_sorted_array;
+package leetcode.C_01_array_two_pointers.D2023_11_14_do_6_Q80_remove_duplicates_from_sorted_array;
 
 public class index {
     public int removeDuplicates(int[] nums) {

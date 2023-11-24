@@ -1,4 +1,4 @@
-package leetcode.C_02_binary_search.D2023_11_01_Q410_split_array_largest_sum;
+package leetcode.C_02_binary_search.D2023_11_01_do_1_Q410_split_array_largest_sum;
 
 public class index_2 {
     public static void main(String[] args) {

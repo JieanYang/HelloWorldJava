@@ -1,4 +1,4 @@
-package leetcode.C_02_binary_search.D2023_11_03_Q852_peak_index_in_a_mountain_array;
+package leetcode.C_02_binary_search.D2023_11_03_do_3_Q852_peak_index_in_a_mountain_array;
 
 class index {
     public static void main(String[] args) {

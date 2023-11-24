@@ -1,4 +1,4 @@
-package leetcode.C_03_linked_list.D2023_11_18_Q141_linked_list_cycle;
+package leetcode.C_03_linked_list.D2023_11_18_do_2_Q141_linked_list_cycle;
 
 import leetcode.C_03_linked_list.ListNode;
 

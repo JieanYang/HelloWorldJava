@@ -1,4 +1,4 @@
-package leetcode.C_01_array_two_pointers.D2023_11_14_Q283_move_zeroes;
+package leetcode.C_01_array_two_pointers.D2023_11_14_do_5_Q283_move_zeroes;
 
 /**
  * 非双指针解法
