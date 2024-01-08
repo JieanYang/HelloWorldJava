@@ -1,4 +1,4 @@
-package leetcode.C_01_array_two_pointers.D2023_07_01_Q11_container_with_most_water;
+package leetcode.C_01_array_two_pointers.D2023_07_01_do_3_Q11_container_with_most_water;
 
 class container_with_most_water {
     public static void main(String[] args) {
