@@ -39,7 +39,7 @@ public class index {
                 System.out.println(mid);
 
                 if (isPossible(nums, mid, m)) {
-                    ans = mid; // here get 18 as result
+                    ans = Math.min(ans, mid); // here get 18 as result
                     hi = mid - 1;
                 } else {
                     lo = mid + 1;
