@@ -2,7 +2,7 @@ package leetcode.C_03_linked_list.D2023_11_18_do_3_Q92_reverse_linked_list_II;
 
 import leetcode.C_03_linked_list.ListNode;
 
-public class index {
+public class index_has_some_errors {
     public static void main(String[] args) {
 
     }
