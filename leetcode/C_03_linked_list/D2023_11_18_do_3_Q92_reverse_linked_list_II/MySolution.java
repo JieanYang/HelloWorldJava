@@ -1,15 +1,8 @@
 package leetcode.C_03_linked_list.D2023_11_18_do_3_Q92_reverse_linked_list_II;
 
+import leetcode.C_03_linked_list.ListNode;
+
 public class MySolution {
-
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static void main(String[] args) {
         System.out.println("test");
