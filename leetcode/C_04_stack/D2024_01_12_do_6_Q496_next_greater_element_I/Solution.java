@@ -19,9 +19,16 @@ public class Solution {
         for (int i = 0; i < nums1.length; i++) {
             Deque<Integer> stack = new ArrayDeque<>();
 
-            for (int j = nums2.length - 1; j >= findIndex(nums2, nums1[i]); j--) {
+            // for (int j = nums2.length - 1; j >= findIndex(nums2, nums1[i]); j--) {
+            // if (nums2[j] > nums1[i]) {
+            // stack.push(nums2[j]);
+            // }
+            // }
+
+            for (int j = findIndex(nums2, nums1[i]); j < nums2.length; j++) {
                 if (nums2[j] > nums1[i]) {
                     stack.push(nums2[j]);
+                    break;
                 }
             }
 
