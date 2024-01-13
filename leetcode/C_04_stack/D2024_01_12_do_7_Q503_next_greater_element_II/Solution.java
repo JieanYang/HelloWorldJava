@@ -1,4 +1,4 @@
-package leetcode.C_04_stack.D2024_01_12_do_7_next_greater_element_II;
+package leetcode.C_04_stack.D2024_01_12_do_7_Q503_next_greater_element_II;
 
 import java.util.Deque;
 import java.util.ArrayDeque;
