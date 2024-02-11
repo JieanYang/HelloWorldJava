@@ -7,21 +7,21 @@ public class Solution_v1_two_stacks {
     public String decodeString(String s) {
         StringBuilder sb = new StringBuilder();
         int n = 0;
-        Deque<Integer> st = new ArrayDeque<>();
-        Deque<StringBuilder> st1 = new ArrayDeque<>();
+        Deque<Integer> st_number = new ArrayDeque<>();
+        Deque<StringBuilder> st_str = new ArrayDeque<>();
 
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c)) {
                 n = n * 10 + (c - '0');
             } else if (c == '[') {
-                st.push(n);
+                st_number.push(n);
                 n = 0;
-                st1.push(sb);
+                st_str.push(sb);
                 sb = new StringBuilder();
             } else if (c == ']') {
-                int k = st.pop();
+                int k = st_number.pop();
                 StringBuilder tmp = sb;
-                sb = st1.pop();
+                sb = st_str.pop();
                 while (k > 0) {
                     sb.append(tmp);
                     k--;
