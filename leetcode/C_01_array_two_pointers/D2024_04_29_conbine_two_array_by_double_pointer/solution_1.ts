@@ -30,3 +30,5 @@ const combineTwoArray = (array1: number[], array2: number[]) => {
 
 const result = combineTwoArray(array_1, array_2);
 console.log("sortTwoArray(array_1, array_2) result: ", result);
+
+console.log("javascript method", [...array_1, ...array_2].sort());
