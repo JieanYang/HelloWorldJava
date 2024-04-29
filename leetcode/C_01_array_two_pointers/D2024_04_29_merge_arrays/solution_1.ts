@@ -1,7 +1,7 @@
 const array_1: number[] = [1, 2, 3];
 const array_2: number[] = [4, 5, 6];
 
-const combineTwoArray = (array1: number[], array2: number[]) => {
+export const mergeTwoArraySorted = (array1: number[], array2: number[]) => {
   let pointer1 = 0,
     pointer2 = 0;
 
@@ -28,7 +28,10 @@ const combineTwoArray = (array1: number[], array2: number[]) => {
   return result;
 };
 
-const result = combineTwoArray(array_1, array_2);
-console.log("sortTwoArray(array_1, array_2) result: ", result);
+const test_1 = () => {
+  const result_1 = mergeTwoArraySorted(array_1, array_2);
+  console.log("sortTwoArray(array_1, array_2) result: ", result_1);
+  console.log("javascript method", [...array_1, ...array_2].sort());
+};
 
-console.log("javascript method", [...array_1, ...array_2].sort());
+// test_1();
