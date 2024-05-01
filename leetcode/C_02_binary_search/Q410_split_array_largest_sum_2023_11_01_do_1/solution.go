@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
-func isValid(nums []int, k int, sumGuess int) bool {
+func getKResult(nums []int, k int, sumGuess int) int {
 	sum_in_isValid := 0
 	k_in_isValid := 0
 
@@ -20,9 +19,7 @@ func isValid(nums []int, k int, sumGuess int) bool {
 
 	k_in_isValid++
 
-	fmt.Println("isValid for mid: ", sumGuess, " break into", k, " and require k: ", k_in_isValid)
-
-	return k_in_isValid <= k
+	return k_in_isValid
 
 }
 
@@ -45,20 +42,22 @@ func splitArray(nums []int, k int) int {
 	}
 	fmt.Println("sum", sum)
 
-	result := sum
+	result := 0
 	left := max
 	right := sum
 
-	for left <= right {
-		mid := left + (right-left)/2
-		// fmt.Println("mid", mid)
-		if isValid(nums, k, mid) {
+	for left < right {
+		mid := left + (right-left+1)/2
+		fmt.Println("mid", mid)
+		kResult := getKResult(nums, k, mid)
+		fmt.Println("kResult", kResult)
+		if kResult <= k {
+			result = mid
 			fmt.Println("mid give to right", mid)
-			result = int(math.Min(float64(result), float64(mid)))
 			right = mid - 1
 		} else {
 			fmt.Println("mid give to left", mid)
-			left = mid + 1
+			left = mid
 		}
 	}
 
@@ -66,9 +65,7 @@ func splitArray(nums []int, k int) int {
 }
 
 func main() {
-	// input := []int{7, 2, 5, 10, 8}
-	input := []int{1, 2, 3, 4, 5}
-	// input := []int{1, 4, 4}
+	input := []int{7, 2, 5, 10, 8}
 	result := splitArray(input, 2)
 	fmt.Println("result", result)
 }
