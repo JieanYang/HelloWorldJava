@@ -1,4 +1,4 @@
-package leetcode.C_04_stack.D2024_01_12_do_1_Q739_daily_temperatures;
+package leetcode.C_04_stack.Q739_daily_temperatures_2024_01_12_do_01;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
